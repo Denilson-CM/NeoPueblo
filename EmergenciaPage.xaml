@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="NeoPueblo.EmergenciaPage">
+    <ContentPage.Content>
+        <Grid>
+            <BoxView Color="White" />
+            <StackLayout>
+                <Label Text="EMERGENCIA" TextColor="White"
+                FontFamily="Cute Jellyfish.ttf#Cute Jellyfish" FontSize="35"
+                   TranslationX="70" TranslationY="7"/>
+                <Image Source="logoverdeneo.png" VerticalOptions="Center"/>
+                <Label Text="COPYRIGHT-SH" TextColor="White"
+                FontFamily="Cute Jellyfish.ttf#Cute Jellyfish" FontSize="18"
+                   TranslationX="95" TranslationY="240"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

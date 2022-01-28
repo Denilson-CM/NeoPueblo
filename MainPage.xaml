@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:NeoPueblo.Controls"
+             mc:Ignorable="d"
+             x:Class="NeoPueblo.MainPage">
+
+    <RelativeLayout>
+        <Image Source="loginhuacachina.jpg" Aspect="AspectFill" 
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+        <Grid RowSpacing="0" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+
+            <Grid.RowDefinitions >
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <StackLayout>
+                    <Image
+                    Margin="70,-20,70,100"
+                    HeightRequest="170"
+                    HorizontalOptions="Center"
+                    Source="logoverdeneo.png"
+                    WidthRequest="170" />
+
+                    <Label
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Text="INGRESAR AL SISTEMA"
+                    TranslationY="-120"
+                    TranslationX="50"
+                    TextColor="White" />
+
+                    <controls:StandardEntry
+                    x:Name="correo"
+                    Margin="20,0,20,-10"
+                    Padding="13"
+                    ReturnType="Next" 
+                    TextColor="GreenYellow"
+                    BackgroundColor="#31FFFFFF"
+                    BorderColor="White"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    Placeholder="CORREO ELECTRONICO"
+                    TranslationY="-110"
+                    PlaceholderColor="White" />
+
+                    <controls:StandardEntry
+                    x:Name="contraseña"
+                    TextColor="GreenYellow"
+                    Margin="20,0,20,80"
+                    Padding="13"
+                    BackgroundColor="#31FFFFFF"
+                    BorderColor="White"
+                    BorderThickness="1"
+                    CornerRadius="8"
+                    IsPassword="True"
+                    Placeholder="CONTRASEÑA"
+                    TranslationY="-60"
+                    PlaceholderColor="White" />
+
+                    <Button  Margin="20,0,20,80" TranslationY="-100" BackgroundColor="GreenYellow" Style="{StaticResource FollowButton}" 
+                    Text="INGRESAR" Clicked="btn_login" 
+                    />
+
+                    <Button  Margin="20,0,20,80" TranslationY="-100" BackgroundColor="GreenYellow" Style="{StaticResource FollowButton}" 
+                    Text="REGISTRATE" Clicked="Button_Clicked" 
+                    />
+                    <Label
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    Text="¿NO TIENES UNA CUENTA?"
+                    TranslationY="-230"
+                    TranslationX="50"
+                    TextColor="White" />
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </RelativeLayout>
+</ContentPage>

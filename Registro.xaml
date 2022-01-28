@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:NeoPueblo.Controls"
+             mc:Ignorable="d"
+             x:Class="NeoPueblo.Registro">
+
+    <RelativeLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Image Source="fondo_pueblo8.jpg" Aspect="AspectFill" 
+                RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+        <Grid RowSpacing="0" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+             RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!--header  background-->
+            <!--Image Source="paisaje.jpg" 
+               HeightRequest="0"
+               WidthRequest="150"
+               Aspect="AspectFill"
+               -->
+            
+            <!-- profile image -->
+            <Image Source="logorojo1neo.png" Margin="0,30,0,-70" HeightRequest="170" WidthRequest="170" HorizontalOptions="Center" VerticalOptions="End"/>
+
+            <!--profile name-->
+            <StackLayout Grid.Row="1" HorizontalOptions="Center" Padding="0,50,0,00">
+                <Label Style="{StaticResource ProfileNameLabel}" Text="" FontFamily="Cute Jellyfish.ttf#Cute Jellyfish"/>
+                <Label Margin="0,-5" Style="{StaticResource ProfileTagLabel}" Text="REGISTRO" FontSize="40" FontFamily="Cute Jellyfish.ttf#Cute Jellyfish"/>
+            </StackLayout>
+
+            <!--profile description-->
+            <Grid Grid.Row="2">
+                <ScrollView>
+                    <StackLayout>
+
+                        <Label Text="**************************************" HorizontalOptions="Center"
+                            TranslationY="10"
+                            FontSize="Large"
+                            FontFamily="Cute Jellyfish.ttf#Cute Jellyfish"
+                            />
+
+                        <controls:StandardEntry
+                        x:Name="Nombres"
+                        Margin="50,30,50,0"
+                        TextColor="GreenYellow"
+                        ClearButtonVisibility="WhileEditing" 
+                        Padding="13"
+                        BackgroundColor="#31FFFFFF"
+                        BorderColor="White"
+                        BorderThickness="1"
+                        ReturnType="Next" 
+                        CornerRadius="8"
+                        Placeholder="NOMBRES"
+                        PlaceholderColor="White"  
+                        />
+                        
+                        <controls:StandardEntry
+                        x:Name="Apellidos"
+                        Margin="50,30,50,0"
+                        TextColor="GreenYellow"
+                        Padding="13"
+                        BackgroundColor="#31FFFFFF"
+                        ReturnType="Next"
+                        BorderColor="White" 
+                        ClearButtonVisibility="WhileEditing" 
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Placeholder="APELLIDOS"
+                        PlaceholderColor="White"/>
+
+                        <controls:StandardEntry
+                        x:Name="Curp"
+                        Margin="50,30,50,0"
+                        ClearButtonVisibility="WhileEditing" 
+                        Padding="13"
+                        BackgroundColor="#31FFFFFF"
+                        ReturnType="Next" 
+                        TextColor="GreenYellow"
+                        BorderColor="White"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Placeholder="CURP"
+                        Keyboard="Text"
+                        PlaceholderColor="White"/>
+
+                        <controls:StandardEntry
+                        x:Name="Correo"
+                        Margin="50,30,50,0"
+                        Padding="13"
+                        BackgroundColor="#31FFFFFF"
+                        TextColor="GreenYellow"
+                        BorderColor="White"
+                        ReturnType="Next" 
+                        ClearButtonVisibility="WhileEditing" 
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        Placeholder="CORREO ELECTRONICO"
+                        Keyboard="Email"
+                        PlaceholderColor="White"/>
+                        
+                        <Picker x:Name="picker_sexo"
+                            Margin="90,30,70,0"
+                            TextColor="GreenYellow"
+                            BackgroundColor="#31FFFFFF"
+                            Title="Sexo"
+                            TitleColor="Red">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Hombre</x:String>
+                                    <x:String>Mujer</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                        <Label x:Name="sexo" TextColor="Transparent" Text="{Binding Source={x:Reference picker_sexo}, Path=SelectedItem}" Margin="0,0,0,0"/>   
+                        
+                        <Picker x:Name="picker_localidad"
+                            Margin="90,30,70,0"
+                            TextColor="GreenYellow"
+                            BackgroundColor="#31FFFFFF"
+                            Title="Localidad"
+                            TitleColor="Red">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>San Antonio Sihó</x:String>
+                                    <x:String>Santa Maria Acú</x:String>
+                                    <x:String>Cuch-Holoch</x:String>
+                                    <x:String>Halachó</x:String>
+                                    <x:String>Cepeda</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+
+
+                        <Label x:Name="localidad" TextColor="Transparent" Text="{Binding Source={x:Reference picker_localidad}, Path=SelectedItem}" Margin="0,0,0,0"/>
+       
+                        <controls:StandardEntry
+                        x:Name="Contraseña"
+                        Margin="50,30,50,0"
+                        TextColor="GreenYellow"
+                        Padding="13"
+                        ReturnType="Next" 
+                        BackgroundColor="#31FFFFFF"
+                        BorderColor="White"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        IsPassword="True"
+                        ClearButtonVisibility="WhileEditing" 
+                        Placeholder="CONTRASEÑA"
+                        PlaceholderColor="White" />
+
+                        <controls:StandardEntry
+                        x:Name="Contraseña_Confirmada"
+                        Margin="50,30,50,0"
+                        TextColor="GreenYellow"
+                        Padding="13"
+                        ReturnType="Next" 
+                        BackgroundColor="#31FFFFFF"
+                        BorderColor="White"
+                        BorderThickness="1"
+                        CornerRadius="8"
+                        IsPassword="True"
+                        ClearButtonVisibility="WhileEditing" 
+                        Placeholder="CONFIRMAR CONTRASEÑA"
+                        PlaceholderColor="White" />
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+            <!--follow button-->
+            <Button Grid.Row="4" Margin="20" BackgroundColor="Red" Style="{StaticResource FollowButton}" 
+                    Text="REGISTRARSE"  Clicked="btn_ingresar_resgistro_Clicked"  
+            />
+        </Grid>
+    </RelativeLayout>
+</ContentPage>

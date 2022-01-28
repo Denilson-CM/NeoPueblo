@@ -1,0 +1,203 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "NeoPueblo/1.0.0": {
+        "dependencies": {
+          "BaseLib": "1.6.4.331",
+          "NETStandard.Library": "2.0.3",
+          "TestStack.White": "0.13.3",
+          "Xamarin.Essentials": "1.3.1",
+          "Xamarin.Forms": "4.5.0.495",
+          "Mono.Android": "0.0.0.0"
+        },
+        "runtime": {
+          "NeoPueblo.dll": {}
+        }
+      },
+      "BaseLib/1.6.4.331": {
+        "dependencies": {
+          "SvgNet": "1.0.8",
+          "iTextSharp": "5.5.13.1"
+        },
+        "runtime": {
+          "lib/net472/BaseLib.dll": {
+            "assemblyVersion": "1.6.4.331",
+            "fileVersion": "1.6.4.331"
+          }
+        }
+      },
+      "Castle.Core/3.3.0": {
+        "runtime": {
+          "lib/net45/Castle.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.0.43"
+          }
+        }
+      },
+      "iTextSharp/5.5.13.1": {
+        "runtime": {
+          "lib/itextsharp.dll": {
+            "assemblyVersion": "5.5.13.1",
+            "fileVersion": "5.5.13.1"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "SvgNet/1.0.8": {
+        "runtime": {
+          "lib/net40/SVG.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.8.0"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.4.0",
+            "fileVersion": "4.6.26515.6"
+          }
+        }
+      },
+      "TestStack.White/0.13.3": {
+        "dependencies": {
+          "Castle.Core": "3.3.0"
+        },
+        "runtime": {
+          "lib/net40/TestStack.White.dll": {
+            "assemblyVersion": "0.13.0.0",
+            "fileVersion": "0.13.3.0"
+          }
+        }
+      },
+      "Xamarin.Essentials/1.3.1": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Essentials.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Xamarin.Forms/4.5.0.495": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.5.0.198"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.5.0.198"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.5.0.198"
+          }
+        }
+      },
+      "Mono.Android/0.0.0.0": {
+        "runtime": {
+          "Mono.Android.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NeoPueblo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BaseLib/1.6.4.331": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+gTK9XJKfF/vOzuLN8pr/SSIM7dMT5ijCCVXBTvmQxM8gA+7yBGDBEzotDA/0sqV5o8F/kZbGfckUVqDw1ipfw==",
+      "path": "baselib/1.6.4.331",
+      "hashPath": "baselib.1.6.4.331.nupkg.sha512"
+    },
+    "Castle.Core/3.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wvlF47qlxKXurxSUWAnX79stVrnkuUPe5lHq26OiXUtMEngPaBcJ+5j+yVdFJ70hjUZpqg7qQK5hCZSex14ekQ==",
+      "path": "castle.core/3.3.0",
+      "hashPath": "castle.core.3.3.0.nupkg.sha512"
+    },
+    "iTextSharp/5.5.13.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xqzsYEYW/nMDjCtAXM5cl9fWil/Ju3HEGbsmoTKtltJc3M/9HNJzg++bCIOHm5uZITvRmZJWMO+S2u1yNG0gQg==",
+      "path": "itextsharp/5.5.13.1",
+      "hashPath": "itextsharp.5.5.13.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "SvgNet/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dX++F7PlTX3eqOdfxSQefeZgXsYnux75lH+7CkcqJTBl2EbZNQw6FgolGDgcVijCJH0zxOHQekL+IdV1LSxjdA==",
+      "path": "svgnet/1.0.8",
+      "hashPath": "svgnet.1.0.8.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "TestStack.White/0.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AmeqJMLqc4YZE452vTUeS0HYR1KlqzWaifHXUkPlppvxEDWq559I7hmjZQ6QqV3SlA6Ej58UbXxa7X/HgqZTcg==",
+      "path": "teststack.white/0.13.3",
+      "hashPath": "teststack.white.0.13.3.nupkg.sha512"
+    },
+    "Xamarin.Essentials/1.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
+      "path": "xamarin.essentials/1.3.1",
+      "hashPath": "xamarin.essentials.1.3.1.nupkg.sha512"
+    },
+    "Xamarin.Forms/4.5.0.495": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ipufpdjFh+YHHw1E3I+8FIQWk1KmlB77PSHg32YRnuBSCUNEHjoMnvEmY9YCK4DTWfOenV0HHZVvGjB9qDtI9w==",
+      "path": "xamarin.forms/4.5.0.495",
+      "hashPath": "xamarin.forms.4.5.0.495.nupkg.sha512"
+    },
+    "Mono.Android/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
